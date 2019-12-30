@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Book List {% endblock %}
+
+
+{% block content %}
+<p></p>
+{% if not perms.books.special_status %}
+<a href="{% url 'orders' %}" class="btn btn-success" >Purchase All Books</a>
+{% endif %}
+{% for book in books %}
+<div>
+   <h3> <p><a href="{{ book.get_absolute_url }}"> {{ book.title }} </a></p></h3>
+</div>
+
+{% endfor %}
+{% endblock %}

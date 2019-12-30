@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %} Book Detail {% endblock %}
+
+{% block content %}
+<div class ='book-detail'>
+<img class="bookcover"  src="{{ books.cover.url }}">
+<h1>{{ books.title }}</h1>
+<h5>Author : {{ books.author }}</h5>
+<h5>Price : {{ books.price }}</h5>
+    <div>
+        <h2>Reviews</h2>
+            <ul>
+                {% for review in books.review.all %}
+                <li>{{ review.review }} : {{ review.author }} </li>
+                {% endfor %}
+            </ul>
+    </div>
+</div>
+
+
+<style>
+        h1 {
+            color: blue;
+        }
+        .bookcover {
+    height: 300px;
+    width: auto;
+    }
+        
+        </style>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+h1, p {
+    color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bookcover {
+    height: 300px;
+    width: auto;
+    }

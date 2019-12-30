@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="container">
+<h1>BookStore HomePage</h1>
+        <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="get">
+        <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+</form>
+<p></p>
+</div>
+<style> 
+   .bookcover {
+    height: 300px;
+    width: auto;
+    }
+    .container {
+        background-image: url(https://www.google.com/imgres?imgurl=http%3A%2F%2Feskipaper.com%2Fimages%2Fbook-background-1.jpg&imgrefurl=http%3A%2F%2Feskipaper.com%2Fbook-background.html&docid=3tVeJd9-REAazM&tbnid=bRlb0Nn8uitUHM%3A&vet=10ahUKEwj4-fHsg93mAhWZDWMBHTn9BfEQMwjXAShHMEc..i&w=1920&h=1200&bih=669&biw=1366&q=book%20background%20images&ved=0ahUKEwj4-fHsg93mAhWZDWMBHTn9BfEQMwjXAShHMEc&iact=mrc&uact=8);
+        background-repeat: no-repeat;
+    }
+    h1, p {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+                
+</style>
+{% endblock content %}
