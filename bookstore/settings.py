@@ -16,6 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -168,6 +169,6 @@ MEDIA_URL = '/media/'
 
 
 STRIPE_TEST_PUBLISHABLE_KEY=os.environ.get('pk_live_fehljmaWDGD23SyS3hXHoFUD00cc5Ayqdo')
-STRIPE_TEST_SECRET_KEY=os.environ.get('sk_live_tuPeYs0BF6jFxTyu3XM8jRRA00KWKI3eqP')
+STRIPE_TEST_SECRET_KEY=os.environ.get('sk_live_...3eqP')
 
 	
